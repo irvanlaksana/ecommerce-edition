@@ -1,33 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paperclip Commerce Edition</title>
+    <title>Paperclip Commerce</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- 🔍 SKRIP SAKTI: Memunculkan Eror Langsung di Layar HP -->
-    <script>
-      window.addEventListener('error', function(e) {
-        var errorDiv = document.createElement('div');
-        errorDiv.style.position = 'fixed';
-        errorDiv.style.top = '0';
-        errorDiv.style.left = '0';
-        errorDiv.style.width = '100%';
-        errorDiv.style.backgroundColor = '#ffffff';
-        errorDiv.style.color = '#ff0000';
-        errorDiv.style.padding = '20px';
-        errorDiv.style.zIndex = '99999';
-        errorDiv.style.fontSize = '14px';
-        errorDiv.style.whiteSpace = 'pre-wrap';
-        errorDiv.style.fontFamily = 'monospace';
-        errorDiv.textContent = '🚨 REAKSI EROR DI HP:\n' + e.message + '\n\nFile: ' + e.filename + '\nBaris: ' + e.lineno;
-        document.body.appendChild(errorDiv);
-      });
-    </script>
   </head>
   <body class="bg-slate-950 text-slate-50">
+    
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
+
   </body>
 </html>
